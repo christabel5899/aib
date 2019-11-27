@@ -1,0 +1,13 @@
+cara penggunaan housing score prediction
+
+1. isi form yang tersedia di halaman home berdasarkan wilayah negara 
+yang ingin diprediksi nilai kelayakan tempat tinggalnya pada waktu 
+yang ditentukan (terdiri dari kolom isian state, cbsa, county, city, 
+dan year)
+
+2. klik submit setelah data telah diisi dengan benar
+
+3. hasil prediksi akan keluar di bawah tombol submit beberapa saat 
+kemudian
+
+link aplikasi : https://housingscoreprediction.herokuapp.com/

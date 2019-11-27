@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+        <title>Property Support System</title>
+    </head>
+    <body class="center">
+        <div><h1>Property Support System</h1></div>
+        <div class="box">
+            <div>
+                <h2>Masukkan wilayah: </h2>
+                <div class="container">
+                    <form class="request" method="post" enctype="multipart/form-data">
+                        <div class="form-group col-md-3">
+                            State
+                            <br>
+                            <select name="state">   
+                                <!-- <?php
+                                    $sql = "SELECT ATE_NAME FROM state";
+                                    $result = mysql_query($sql);
+
+                                    echo "<select name='state'>";
+                                        while ($row = mysql_fetch_array($result) {
+                                            echo "<option value'" . $row['ATE_NAME'] . "'>" . $row['ATE_NAME'] ."</option>";
+                                        }
+                                        echo "</select>";
+                                ?>                         -->
+                                <option value="AL">Alabama</option>
+                                <option value="FL">Florida</option>
+                                <option value="WA">Washington</option>
+                                <option value="VI">Virginia</option>
+                                <option value="CA">California</option>
+                            </select>           
+                        </div>
+                        <div class="form-group col-md-3">
+                            CBSA
+                            <br>
+                            <select name="cbsa">                           
+                                <option value="Albertville, AL Micropolitan Statistical Area">Albertville, AL Micropolitan Statistical Area</option>
+                                <option value="Columbus, GA-AL Metropolitan Statistical Area">Columbus, GA-AL Metropolitan Statistical Area</option>
+                                <option value="Tampa-St. Petersburg-Clearwater, FL Metropolitan Statistical Area">Tampa-St. Petersburg-Clearwater, FL Metropolitan Statistical Area</option>
+                                <option value="Warren-Troy-Farmington Hills, MI Metropolitan Division">Warren-Troy-Farmington Hills, MI Metropolitan Division</option>
+                                <option value="Burlington, NC Metropolitan Statistical Area">Burlington, NC Metropolitan Statistical Area</option>
+                            </select>           
+                        </div>
+                        <div class="form-group col-md-3">
+                            County
+                            <br>
+                            <select name="county">                           
+                                <option value="Marshall">Marshall</option>
+                                <option value="Russell">Russell</option>
+                                <option value="Wyandotte">Wyandotte</option>
+                                <option value="Harris">Harris</option>
+                                <option value="Alamance">Alamance</option>
+                            </select>           
+                        </div>
+                        <div class="form-group col-md-3">
+                            City
+                            <br>
+                            <select name="city">                           
+                                <option value="Arab">Arab</option>
+                                <option value="Winona">Winona</option>
+                                <option value="Madison">Madison</option>
+                                <option value="International Falls">International Falls</option>
+                                <option value="Elon">Elon</option>
+                            </select>           
+                        </div>
+                        <div class="form-group col-md-3">
+                            Year
+                            <br>
+                            <select name="year">                           
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>           
+                        </div>
+                        <br>
+                        <br>                                                    
+                        <button type="submit" style="padd" class="button button2">Submit</button>              
+                    </form> 
+                </div>
+            </div>
+            <div>
+                <h2 style="margin-top: 10px">Indeks properti:</h2>
+                <!-- {% if result is not none %} -->
+                    <div><label style="font-size: 16px; margin-left: 10px">{{result}}</label></div>
+                <!-- {% endif %} -->
+            </div>
+        </div>
+        </div>
+
+        <script>
+            
+        </script>
+    </body>
+</html>
