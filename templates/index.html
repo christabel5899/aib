@@ -1,4 +1,71 @@
+<!DOCTYPE html>
 <html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Property Support System</h3>
+
+<div>
+  <form class="request" method="post">
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" placeholder="State">
+
+    <label for="cbsa">CBSA</label>
+    <input type="text" id="cbsa" name="cbsa" placeholder="CBSA">
+
+    <label for="county">County</label>
+    <input type="text" id="county" name="county" placeholder="County">
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="City">
+
+    <label for="year">Year</label>
+    <input type="text" id="year" name="year" placeholder="Year">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div>
+    <h2 style="margin-top: 10px">Indeks properti:</h2>
+    <div><label style="font-size: 16px; margin-left: 10px">{{result}}</label></div>
+   
+</div>
+
+</body>
+</html>
+
+<!-- <html>
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
         <title>Property Support System</title>
@@ -10,34 +77,25 @@
                 <h2>Masukkan wilayah: </h2>
                 <div class="container">
                     <form class="request" method="post" enctype="multipart/form-data">
-                        <div class="form-group col-md-3">
-                            State
-                            <br>
-                            <input type="text" name="state" value="">          
-                        </div>
-                        <div class="form-group col-md-3">
-                            CBSA
-                            <br>                          
-                            <input type="text" name="cbsa" value="">         
-                        </div>
-                        <div class="form-group col-md-3">
-                            County
-                            <br>
-                            <input type="text" name="county" value="">          
-                        </div>
-                        <div class="form-group col-md-3">
-                            City
-                            <br>
-                            <input type="text" name="city" value="">         
-                        </div>
-                        <div class="form-group col-md-3">
-                            Year
-                            <br>
-                            <select name="year">                           
-                                <input type="text" name="year" value="">
-                            </select>           
-                        </div>
-                        <br>
+                        <div>
+                            <form action="/action_page.php">
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                          
+                              <label for="country">Country</label>
+                              <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                              </select>
+                            
+                              <input type="submit" value="Submit">
+                            </form>
+                          </div>
+
                         <br>                                                    
                         <button type="submit" style="padd" class="button button2">Submit</button>              
                     </form> 
@@ -45,9 +103,9 @@
             </div>
             <div>
                 <h2 style="margin-top: 10px">Indeks properti:</h2>
-                <!-- {% if result is not none %} -->
+               
                     <div><label style="font-size: 16px; margin-left: 10px">{{result}}</label></div>
-                <!-- {% endif %} -->
+               
             </div>
         </div>
         </div>
@@ -56,4 +114,4 @@
             
         </script>
     </body>
-</html>
+</html> -->
